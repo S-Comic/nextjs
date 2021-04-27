@@ -1,13 +1,47 @@
+
+.worlds{
+  --bannerHeight: 500px;
+}
+
 .heroBanner{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  height:500px;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: linear-gradient(0deg, #0d1f04, #1d5600);
+  height:var(--bannerHeight);
   width: 100%;
-  background-color: blue;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+.heroBanner > * {
+    z-index: 100;
+}
+
+.heroBanner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--bannerHeight);
+  background: url("../public/images/regensburgsmall.png") center fixed;
+  opacity: .2;
+  z-index: 2;
+  filter: saturate(0);
 }
 
 .heroBanner h1{
-  font-size: 3em;
+  color: white;
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+}
+
+.heroBanner p{
+  color: white;
+  font-size: 1.5em;
 }
