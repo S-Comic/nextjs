@@ -31,3 +31,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* HEADER */
+
+.pageHeader{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar > p{
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.navBrand img{
+  height: 40px;
+  filter: brightness(1000) saturate(0) contrast(100);
+}
