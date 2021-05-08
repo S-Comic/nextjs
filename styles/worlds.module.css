@@ -1,4 +1,12 @@
 
+.secondLayer{
+  margin-left: 20px;
+}
+
+.thirdLayer{
+  margin-left: 40px;
+}
+
 .worlds{
   --bannerHeight: 40vh;
 }
