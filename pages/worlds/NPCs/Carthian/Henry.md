@@ -1,0 +1,9 @@
+# Henry
+**The following is from the notes of** [Thomas Vic](../../Player%20Characters/Thomas%20Vic.md):
+
+“_Executioner Henry was at first, believed to be the replacement of_ [_Emmy_](../../Player%20Characters/Emmy%20Crystalridge.md) _as the_ [_Four King’s_](../../Groups/Kings%20of%20Sereni.md) _favoured Executioner. He was sent to hunt Emmy in_ [_Navlaan_](../../Locations/Carthus/Navlaan) _but wanted to reason with her instead. He offered Emmy a deal, perform one last execution and receive a pardon. Emmy instead ambushed him with the help of our Intrepid heroes which led to her kidnapping and a fortnight long chase across_ [_Carthus_](../../Locations/Carthus.md)_. Upon catching Henry not only was he prepared but he had slain his escort and any one else he met to create corpse piles all around his field of battle. He manipulated the spirits of the dead to battle the party and upon his defeat revealed himself to be reborn in flame as one of ten Solar Flares. Despite the party’s best efforts all but_ [_Thomas_](../../Player%20Characters/Thomas%20Vic.md) _were felled with_ [_Juno_](../../Player%20Characters/Juno%20Whitfoot.md) _even being outright killed. Rather than risk the lives of our heroes Thomas struck a bargain with Henry, their lives in return for giving one of the party up to Henry and the Kolasi (An ancient group who built archives beneath the ground). After Emmy resurrected Juno, the party decided to flee rather than honor the deal. They instead fled to_ [_Sereni_](../../Locations/Carthus/Sereni)_._”  
+ 
+
+**The following is from the notes of** [Juno Whitfoot](../../Player%20Characters/Juno%20Whitfoot.md):
+
+_“That asshole is nothing more than a flaming cunt with ang

@@ -1,0 +1,4 @@
+# Glass man
+The glass man is a being, perhaps an old god, who is the patron of [Juno Whitfoot](../../Player%20Characters/Juno%20Whitfoot.md). According to [Seko Shura](../Carthian/Seko%20Shura.md), he's also able to shape-shift and isn't a person that should be easily trusted. Little else is known about this figure, although he almost certainly has ill intentions. 
+
+Throughout the game the glass man has entrusted Juno with a variety of boons, including the ability to teleport short distances, limited spell-casting, and an orb which can transform into any instrument. He appears to reside in a dimension made up entirely of glass shards, which Juno is able to visit at will by using his ‘Gift of the void’ on any d

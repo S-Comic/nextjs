@@ -1,0 +1,4 @@
+# Session 2
+While sleeping in the [Wanderer's Run](../../Locations/Carthus/Navlaan/Wanderer's%20Run.md), [Juno Whitfoot](../../Player%20Characters/Juno%20Whitfoot.md) has a pretty shit dream. He dreams of a space made of shards of glass, within which is a man with slicked back hair in a dark trench-coat (who would come to be known as the [Glass man](../../NPCs/Patrons/Glass%20man.md)). The glass man provides Juno with the ability to teleport a short distance. The glass man wants an orb of some kind, and wishes for Juno to steal it for him in return.
+
+The next day, the party go into the desert to hunt a corrupted beast as a way of making money, since the [Paladins of Soliera](../../Groups/Paladins%20of%20Soliera.md) are paying those who hunt the corrupted. They are successful, and return to [Navlaan](../../Locations/Carthus/Navlaan) to be paid a small

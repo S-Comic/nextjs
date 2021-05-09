@@ -1,0 +1,4 @@
+# Devi
+**The following is from the notes of** [Thomas Vic](../../Player%20Characters/Thomas%20Vic.md):
+
+_“Devi is the adopted daughter of_ [_Ikor_](Ikor.md) _whom the party encountered in_ [_Navlaan_](../../Locations/Carthus/Navlaan) _when visiting the headquarters of_ [_Secretary Nailan_](Nailan.md)_. Devi is a young child who at first appeared human but who then healed_ [_Thomas_](../../Player%20Characters/Thomas%20Vic.md) _of his corruption and revealed her ability to see it on those corrupted by it. Last the party saw of her, she was travelling with_ [_Seko_](Seko%20Shura.md) _back to her Father. As a gift from Thomas, she possesses the crown of the lost kingdom of_ [_Hestius_](../../Locations/Carthus/Hestius.md)_, who refers to her as the Queen of Navlaan

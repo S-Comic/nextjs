@@ -1,0 +1,7 @@
+# Hellig (Mr Grim)
+**The following is from the notes of** [Thomas Vic](../../Player%20Characters/Thomas%20Vic.md):
+
+"_Mr Grim is the name given to the God of Death, Hellig by our author. Grim is a figure never encountered by the party, only by Thomas in his nightmares and research in the Kolasi archive. Grim’s intentions are unclear, only requesting to trial Thomas in return for power and the resurrection of_ [_Varanoth_](../Hestian/Varanoth.md) _and the kingdom of_ [_Hestius_](../../Locations/Carthus/Hestius.md)_. He appears to Thomas as a shadowy figure who constantly avoids been looked upon in an ocean of lost spirits and ravens._
+
+_Hellig’s legend is as follows:_  
+_There was a rebellion against titans (The Original Gods), by the son of the king of the titans, the God of death and a mortal (X is how he is referred). God of death created a spear to kill titans. He was the first person to kill titans but the rebellion failed and he was banished to the Plane of death, specifically for those who die horrible deaths. Hellig is Death’s name and X was imprisoned. Hellig is said to be the most powerful G-d and X was believed to be a mortal empowered with Hellig’s divinity to use as he s

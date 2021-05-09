@@ -7,8 +7,83 @@
   margin-left: 40px;
 }
 
+.navigationDropdownArrow{
+  text-decoration: none !important;
+  box-shadow: none !important;
+  width: 44px;
+  height: 44px;
+  border-radius: 0 !important;
+  color: var(--themeColor) !important;
+}
+
+.navigationDropdownArrow:hover{
+  color: white !important;
+  background-color: var(--themeColor) !important;
+}
+
+.navigationItem{
+  padding: 0 !important;
+  border: none !important;
+  background-color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: !important;
+
+}
+
+.navigationDropdownIcon{
+}
+
+.documentLinkContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-left: 1px dotted lightgrey;
+}
+
+.documentLinkContainer:hover{
+  color: white !important;
+  background-color:var(--themeColor) !important;
+}
+
+.documentLinkContainer:hover a{
+  color: white !important;
+  background-color:var(--themeColor) !important;
+}
+
+.documentLink{
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--themeColor) !important;
+}
+
+
+
+.navigationItemContainer{
+  border: none !important;
+}
+
+.worldsSubtitle{
+  color: var(--themeColor);
+  border-bottom:1px dotted lightgrey;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.card{
+  color: white;
+}
+
+.navigationDropdownArrow:hover{
+  color: white;
+  background-color:var(--themeColor);
+}
+
+
 .worlds{
-  --bannerHeight: 40vh;
+  --bannerHeight: 30vh;
 }
 
 .heroBanner{
@@ -51,4 +126,10 @@
 .heroBanner p{
   color: white;
   font-size: 1.5em;
+}
+
+
+.worldsContainer .worldsCard{
+  margin-top: 30px;
+  border-top: 5px solid var(--themeColor);
 }

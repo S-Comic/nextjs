@@ -1,0 +1,4 @@
+# Onyx Spiders
+The Onyx Spiders are one of the orders of the [Knights of the four kings](../Knights%20of%20the%20four%20kings.md), specifically specializing in traps and schemes. They don't often resort to fighting, preferring to trade in espionage and information. 
+
+“_The Onyx spider never distinguishes themselves as such, nor are they knights by anything but name. They act more territorial, often watching over areas than travelling to encounters. These individuals tend to prefer laying carefully planned traps and schemes to neutralize threats. They also focus on gathering and extracting information over fighting skill. In their home territory they are the most dangerous of the knights to encounter but outside it they aren’t much stronger than a gua

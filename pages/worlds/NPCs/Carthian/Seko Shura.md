@@ -1,0 +1,8 @@
+# Seko Shura
+**The following is from the notes of** [Thomas Vic](../../Player%20Characters/Thomas%20Vic.md):
+
+"Our intrepid heroes first encountered the great Seko Shura unbeknownst to them outside the gates of [Navlaan](../../Locations/Carthus/Navlaan). He appeared as a homeless, one armed wanderer. Before their disagreement over the place of violence Shura even tutored Thomas after he survived execution at the hands of the [paladins](../../Groups/Paladins%20of%20Soliera.md). Since then Seko was last seen as an escort to [Devi](Devi.md) his adopted niece, and trained [Tharin](../../Groups/Blood%20Orcs/Tharin.md) in his Mountain Splitting technique.
+
+In the [Kolasi Archive](../../Locations/Carthus/Kolasi%20Archive.md) Seko’s legend was uncovered: Seko killed the Gods by walking to the tallest mountain in [Red Rock](../../Locations/Carthus/Redrock.md) and cut in half to issue a challenge to them all. All the Gods, 1000 Gods, attacked at once. They all died in ten days, when Solaria and Tummora arrived. They wounded one another and called a stalemate. Seko blinded Tammora and blinded and ripped off Solaria's ears and she cut off his hand. Solaria wielded corruption in the battle.
+
+When Thomas climbed the Black Mountain and met the [Shadow Queen](../Patrons/Shadow%20Queen.md)’s chief lieutenant [Defiance](../Patrons/Defiance.md), she alluded to the fact that Seko too had once climbed the same mountain. Thomas received a gift from Defiance but it is unclear what Seko received other than the disapproval of Defiance after he split her m
