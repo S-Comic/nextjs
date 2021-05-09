@@ -14,6 +14,7 @@
   height: 44px;
   border-radius: 0 !important;
   color: var(--themeColor) !important;
+  transition: none !important;
 }
 
 .navigationDropdownArrow:hover{
@@ -31,7 +32,28 @@
 
 }
 
+.navigationItemSingle{
+  padding: 0 !important;
+  border: none !important;
+  background-color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: !important;
+
+}
+
+.navigationItemSingle:hover{
+  background-color: var(--themeColor) !important;
+}
+
+.navigationItemSingle:hover .navigationDropdownArrow, .navigationItemSingle:hover .documentLink, .navigationItemSingle:hover .documentLinkContainer{
+  color: white !important;
+  border-color: var(--themeColor);
+}
+
+
 .navigationDropdownIcon{
+  width: 100% !important;
 }
 
 .documentLinkContainer{
@@ -55,7 +77,7 @@
 .documentLink{
   text-align: left;
   padding: 10px;
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--themeColor) !important;
 }
 
@@ -119,6 +141,7 @@
 .heroBanner h1{
   color: white;
   font-size: 5em;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -132,4 +155,10 @@
 .worldsContainer .worldsCard{
   margin-top: 30px;
   border-top: 5px solid var(--themeColor);
+}
+
+@media only screen and (max-width: 768px) {
+  .heroBanner h1{
+    font-size: 3em;
+  }
 }

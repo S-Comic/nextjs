@@ -7,10 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { far } from '@fortawesome/free-regular-svg-icons'
-import { faCheckSquare, faCoffee, faFolder, faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faFolder, faFileAlt, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useEffect, useState } from "react";
 
-library.add(far, faCheckSquare, faCoffee, faFolder, faFileAlt)
+library.add(far, faCheckSquare, faCoffee, faFolder, faFileAlt, faFolderOpen)
 
 var base = posts.files[0].children.length
 let array = []
@@ -23,17 +24,28 @@ import styles from '../styles/worlds.module.css'
 
 function DocumentNavigation(key){
 
+
+
 function loopLayerOne(){
   array = []
   var i
   for (i=0; i < posts.files[0].children.length; i++){
+    const [icon, setIcon] = useState(faFolder);
     array.push(
 
       <Accordion defaultActiveKey="0">
         <Card className={styles.navigationItemContainer}>
           <Card.Header className={styles.navigationItem}>
-            <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
-            <FontAwesomeIcon icon="folder" />
+            <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key} onClick={() => {
+              if (icon == faFolder){
+                setIcon(faFolderOpen);
+              }
+              else{
+                setIcon(faFolder);
+              }
+
+            }}>
+            <FontAwesomeIcon className={styles.navigationDropdownIcon} key={i} icon={icon} />
             </Accordion.Toggle>
             <div className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].title}</a></div>
           </Card.Header>
@@ -56,14 +68,23 @@ function loopLayerTwo(i){
     secondArray = []
     var path = "/" + String(posts.files[0].children[i].title)+ "/" + String(posts.files[0].children[i].children[r].title)
     for (r=0; r < posts.files[0].children[i].children.length; r++){
+      const [icon, setIcon] = useState(faFolder);
       if (typeof posts.files[0].children[i].children[r].children !== 'undefined'){
       secondArray.push(
 
         <Accordion defaultActiveKey="0">
         <Card className={styles.navigationItemContainer}>
           <Card.Header className={styles.navigationItem}>
-              <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
-              <FontAwesomeIcon icon="folder" />
+              <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}onClick={() => {
+                if (icon == faFolder){
+                  setIcon(faFolderOpen);
+                }
+                else{
+                  setIcon(faFolder);
+                }
+
+              }}>
+              <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
               </Accordion.Toggle>
                 <div className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></div>
             </Card.Header>
@@ -79,7 +100,7 @@ function loopLayerTwo(i){
       secondArray.push(
         <Accordion defaultActiveKey="0">
         <Card className={styles.navigationItemContainer}>
-          <Card.Header className={styles.navigationItem}>
+          <Card.Header className={styles.navigationItemSingle}>
           <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
           <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
           </Accordion.Toggle>
@@ -102,7 +123,7 @@ function loopLayerThree(i, r){
     for (a=0; a < posts.files[0].children[i].children[r].children.length; a++){
       thirdArray.push(
         <Card className={styles.navigationItemContainer}>
-          <Card.Header className={styles.navigationItem}>
+          <Card.Header className={styles.navigationItemSingle}>
           <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
           <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
           </Accordion.Toggle>

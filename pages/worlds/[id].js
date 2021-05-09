@@ -47,7 +47,6 @@ const Post = props => {
             <Col>
             <Card className={styles.worldsCard}>
               <Card.Body>
-                    <h2 className={styles.worldsSubtitle}>Maps</h2>
                     <Htmlimport />
               </Card.Body>
             </Card>
