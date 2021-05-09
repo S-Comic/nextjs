@@ -1,2 +1,0 @@
-# Ludwig
-The head of a group of blood-hunters in [Redrock](../../Locations/Carthus/Redrock.md) called the [Amygdala](../Amygdala.md). Not much is known about him other than the fact that he's revered by the local population because he strives to keep them free of corrupti

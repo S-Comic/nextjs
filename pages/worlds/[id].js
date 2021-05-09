@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DocumentNavigation from '../../components/indexing.js'
+import Htmlimport from '../../components/markdownimport.js'
 import posts from '../static/worldData.json'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,6 +18,9 @@ import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+import ReactMarkdown from 'react-markdown'
+
 
 library.add(far, faCheckSquare, faCoffee)
 
@@ -44,6 +48,7 @@ const Post = props => {
             <Card className={styles.worldsCard}>
               <Card.Body>
                     <h2 className={styles.worldsSubtitle}>Maps</h2>
+                    <Htmlimport />
               </Card.Body>
             </Card>
             </Col>

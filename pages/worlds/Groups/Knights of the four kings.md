@@ -1,2 +1,0 @@
-# Knights of the four kings
-“_The knights of the 4 kings are knights that serve the_ [Kings of Sereni](Kings%20of%20Sereni.md)_, (though the kings themselves claim to rule over all of Carthus.) These knights are divided into 4 divisions, 1 for each king and adopt fighting styles resembling the specific animal sigil that represents each king.

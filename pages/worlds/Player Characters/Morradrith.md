@@ -1,2 +1,0 @@
-# Morradrith
-![](Morradrith/Morradrith.jpg)

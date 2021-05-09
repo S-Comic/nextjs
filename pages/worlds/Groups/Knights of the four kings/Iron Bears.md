@@ -1,4 +1,0 @@
-# Iron Bears
-The Iron Bears are one of the orders of the [Knights of the four kings](../Knights%20of%20the%20four%20kings.md). They're stereotypical quite brutish and they prefer to use strength to come out on top in combat.
-
-"_The Iron bears are knights that represent the immovable object. They are hardy, often large in stature, and wield heavy armor, great shields and axes. They are known to be upfront fighters that don’t care for roundabout methods of assassination or sneak attacks. To them a strong fighter can withstand all manner of tricks without resorting to them. They are known to be a difficult group to handle for inn-keeps due to their more rowdy nature, but they are strong protectors

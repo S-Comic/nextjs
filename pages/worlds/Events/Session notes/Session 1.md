@@ -1,6 +1,0 @@
-# Session 1
-The party from the start is: [Cooper Brasskin](../../Player%20Characters/Cooper%20Brasskin.md), [Emmy Crystalridge](../../Player%20Characters/Emmy%20Crystalridge.md), [Juno Whitfoot](../../Player%20Characters/Juno%20Whitfoot.md), [Morradrith](../../Player%20Characters/Morradrith.md) and [Tharin](../../Groups/Blood%20Orcs/Tharin.md).
-
-Each of us for our own reasons enter into [Navlaan](../../Locations/Carthus/Navlaan). There are two paladin guards stationed outside manning the gate, and sitting next to the gate is a homeless man (Who we later learn is [Seko Shura](../../NPCs/Carthian/Seko%20Shura.md) keeping an eye on Thomas).
-
-We attend to our own business for some time, before we all converge on the [Wanderer's Run](../../Locations/Carthus/Navlaan/Wanderer's%20Run.md), an Inn run by [Agroga](../../NPCs/Carthian/Agroga.md) and her husband. Because this is dungeons and dragons we make quick friends in the Inn, booking rooms with each-other deciding to venture together. Juno shares a room with Morradrith, which he rapi

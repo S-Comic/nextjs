@@ -1,2 +1,0 @@
-# Blood Orcs
-_"These orcs have undergone a trial of blood and ash and in the process become immune to the effects of_ [The Corruption](../Misc/The%20Corruption.md)_. However this comes at a cost, these Orcs crave blood like an addiction, specifically the blood of the corrupted. They often seek out the corrupted beasts within_ [Carthus](../Locations/Carthus.md) _with some even venturing beyond the lands of Carthus into the corruptions domain_."
