@@ -9,7 +9,6 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DocumentNavigation from '../../components/indexing.js'
 import Htmlimport from '../../components/markdownimport.js'
-import posts from '../static/worldData.json'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { far } from '@fortawesome/free-regular-svg-icons'
@@ -18,8 +17,10 @@ import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import posts from '../static/worlds.json'
 
 import ReactMarkdown from 'react-markdown'
+import markdownl from '../../components/Juno Whitfoot.md'
 
 
 library.add(far, faCheckSquare, faCoffee)
@@ -27,13 +28,18 @@ library.add(far, faCheckSquare, faCoffee)
 
 
 const Post = props => {
+
+
+
   return (
    <body>
      <main className={styles.worlds}>
+     {/*
         <section className={styles.heroBanner}>
-          <h1 className={styles.heroTitle}> Welcome to Carthus! </h1>
-          <p> The blackend desert </p>
+          <h1 className={styles.heroTitle}>{props.post.title}</h1>
+          <p> {props.post.subtitle} </p>
         </section>
+      */}
         <Container className={styles.worldsContainer}>
           <Row>
             <Col md={3}>
@@ -46,9 +52,9 @@ const Post = props => {
             </Col>
 
             <Col>
-            <Card className={styles.worldsCard}>
+            <Card className={styles.contentCard}>
               <Card.Body>
-                    <Htmlimport />
+              <ReactMarkdown children={markdownl} />
               </Card.Body>
             </Card>
             </Col>
@@ -59,5 +65,12 @@ const Post = props => {
     </body>
   )
 }
+
+Post.getInitialProps = ({ query }) => {
+  return {
+    post: posts[query.id]
+  }
+}
+
 
 export default Post
