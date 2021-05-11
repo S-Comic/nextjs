@@ -33,7 +33,6 @@ function loopLayerOne(){
   for (i=0; i < posts.files[0].children.length; i++){
     key = key + 1
     const [icon, setIcon] = useState(faFolder);
-    console.log(key.typeof)
     array.push(
 
       <Accordion defaultActiveKey="0" key={posts.files[0].children[i].noteId}>
@@ -50,7 +49,7 @@ function loopLayerOne(){
             }}>
             <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
             </Accordion.Toggle>
-            <div className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].title}</a></div>
+            <a href={posts.files[0].children[i].noteId} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].title}</a></a>
           </Card.Header>
           <Accordion.Collapse eventKey={key}>
             <Card.Body>{loopLayerTwo(i, key)}</Card.Body>
@@ -89,7 +88,7 @@ function loopLayerTwo(i, key){
               }}>
               <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
               </Accordion.Toggle>
-                <div className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></div>
+                <a href={posts.files[0].children[i].children[r].noteId} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
             </Card.Header>
             <Accordion.Collapse eventKey={key}>
               <Card.Body>{loopLayerThree(i, r)}</Card.Body>
@@ -107,7 +106,7 @@ function loopLayerTwo(i, key){
           <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
           <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
           </Accordion.Toggle>
-              <div className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></div>
+              <a href={posts.files[0].children[i].children[r].noteId} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
           </Card.Header>
         </Card>
         </Accordion>
@@ -129,7 +128,7 @@ function loopLayerThree(i, r){
           <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
           <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
           </Accordion.Toggle>
-                <a className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].children[a].title}</a></a>
+                <a href={posts.files[0].children[i].children[r].children[a].noteId} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].children[r].children[a].title}</a></a>
             </Card.Header>
           </Card>
       )
