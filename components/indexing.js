@@ -49,7 +49,7 @@ function loopLayerOne(){
             }}>
             <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
             </Accordion.Toggle>
-            <a href={posts.files[0].children[i].noteId} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].title}</a></a>
+            <a onClick={() => setCount(posts.files[0].children[i].noteId)} className={styles.documentLinkContainer}><a className={styles.documentLink}>{posts.files[0].children[i].title}</a></a>
           </Card.Header>
           <Accordion.Collapse eventKey={key}>
             <Card.Body>{loopLayerTwo(i, key)}</Card.Body>

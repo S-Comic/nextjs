@@ -28,14 +28,9 @@ function Htmlimport(){
 
     function findContent(){
       var currentPage = splitUrl()
-      console.log(currentPage)
-
-      for (i=0; i < content.length; i++){
-        if (content[i].noteId == currentPage){
-          pageContent.__html = content[i].content
-          return pageContent
-        }
-      }
+      console.log(content[currentPage])
+      pageContent.__html = content[currentPage]
+      return pageContent
     }
 
     function splitUrl(){
