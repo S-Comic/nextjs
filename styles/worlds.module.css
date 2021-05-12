@@ -166,8 +166,10 @@
 .worldsContainer .contentCard{
     margin-top: 30px;
     position: sticky;
-    top: 20px;
-    border: none;
+    top: 2vh;
+    border-top: 5px solid var(--themeColor) ;
+    max-height: 96vh;
+    overflow-y: auto;
 }
 
 @media only screen and (max-width: 768px) {

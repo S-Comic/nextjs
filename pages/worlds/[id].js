@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import DocumentNavigation from '../../components/indexing.js'
 import Htmlimport from '../../components/markdownimport.js'
 import content from './note_contents.json'
+import notes from './notes.json'
 
 
 
@@ -38,7 +39,34 @@ import posts from '../static/worldData.json'
 const Post = props => {
   const [count, setCount] = useState(props.post);
 
-  function handleClick(a, b){
+  function combineContent(docId){
+    console.log(content[docId].content)
+    var doclink = String(content[docId].title)
+    doclink = "<h1 style='margin-bottom: 20px;'>" + doclink + "</h1>"
+    var doclink2 = String(content[docId].content)
+    doclink = doclink + doclink2
+    setCount(doclink)
+
+  }
+
+  function createLinks(){
+        var pageContent = {}
+        var i = 0
+
+        for (i=0; i < 411; i++){
+
+          if (notes[i].isDeleted == 0){
+
+
+          Object.defineProperty(pageContent, notes[i].noteId,{
+            value: {title: notes[i].title, content: content[notes[i].noteId]},
+            enumerable: true
+          });
+
+        }
+        }
+
+
 
   }
 
@@ -48,8 +76,7 @@ const Post = props => {
 
     var i = 0
     for (i=0; i < posts.files[0].children.length; i++){
-      console.log(i)
-      console.log(posts.files[0].children[i].noteId)
+
       key = key + 1
       var currentId = posts.files[0].children[i].noteId
       const [icon, setIcon] = useState(faFolder);
@@ -70,8 +97,8 @@ const Post = props => {
               <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
               </Accordion.Toggle>
 
-              <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLinkContainer}>
-              <a className={styles.documentLink}>{posts.files[0].children[i].title}</a></a>
+              <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLinkContainer}>
+              <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLink}>{posts.files[0].children[i].title}</a></a>
             </Card.Header>
             <Accordion.Collapse eventKey={key}>
               <Card.Body>{loopLayerTwo(i, key)}</Card.Body>
@@ -112,8 +139,8 @@ const Post = props => {
                 }}>
                 <FontAwesomeIcon className={styles.navigationDropdownIcon} icon={icon} />
                 </Accordion.Toggle>
-                  <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLinkContainer}>
-                  <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
+                  <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLinkContainer}>
+                  <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
               </Card.Header>
               <Accordion.Collapse eventKey={key}>
                 <Card.Body>{loopLayerThree(i, r)}</Card.Body>
@@ -131,8 +158,8 @@ const Post = props => {
             <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
             <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
             </Accordion.Toggle>
-                <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLinkContainer}>
-                <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
+                <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLinkContainer}>
+                <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLink}>{posts.files[0].children[i].children[r].title}</a></a>
             </Card.Header>
           </Card>
           </Accordion>
@@ -155,8 +182,8 @@ const Post = props => {
             <Accordion.Toggle className={styles.navigationDropdownArrow} as={Button} variant="link" eventKey={key}>
             <FontAwesomeIcon className={styles.navigationDropdownIcon} icon="file-alt" />
             </Accordion.Toggle>
-                  <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLinkContainer}>
-                  <a id={currentId} onClick={() => setCount(content[event.target.id])} className={styles.documentLink}>{posts.files[0].children[i].children[r].children[a].title}</a></a>
+                  <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLinkContainer}>
+                  <a id={currentId} onClick={() => combineContent(event.target.id)} className={styles.documentLink}>{posts.files[0].children[i].children[r].children[a].title}</a></a>
               </Card.Header>
             </Card>
         )
@@ -172,6 +199,7 @@ const Post = props => {
   }
 
   return (
+
    <body>
      <main className={styles.worlds}>
 
