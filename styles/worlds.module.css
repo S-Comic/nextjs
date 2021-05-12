@@ -159,19 +159,23 @@
 }
 
 .worldsContainer .worldsCard{
-  margin-top: 30px;
+  margin-top: 3vh;
   border-top: 5px solid var(--themeColor);
+  margin-bottom: 30px;
 }
 
 .worldsContainer .contentCard{
-    margin-top: 30px;
+    margin-top: 3vh;
     position: sticky;
-    top: 2vh;
+    top: 3vh;
     border-top: 5px solid var(--themeColor) ;
-    max-height: 96vh;
+    max-height: 94vh;
     overflow-y: auto;
 }
 
+.worldsContainer .contentCard h1{
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 768px) {
   .heroBanner h1{
     font-size: 3em;

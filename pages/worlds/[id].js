@@ -37,13 +37,44 @@ import posts from '../static/worldData.json'
 
 
 const Post = props => {
-  const [count, setCount] = useState(props.post);
+  const [count, setCount] = useState(`
+    <h1>Work in progress!</h1>
+
+    <p>This is a work-in-progress database of notes from Buried Under Ash, Oscar's DnD game.
+    The eventual aim is to be able to use this site for multiple different worlds and notes,
+    but this current build is only for BUA.</p>
+
+    <p>You can use the menu on the right to navigate the filesystem, which is made up
+    of files and folders (as denoted by corresponding icons).
+    Clicking one of the folder icons will display that folder's children, whereas clicking
+    a folder's title will show it's content in this box (yes, folders can hold content too!). Clicking anywhere
+    on a file will display it's content.</p>
+
+    <p>Obviously this is still WIP, so there's some things missing or features flat out not working right now.</p>
+    <p><strong>Known issues / things to add:</strong></p>
+    <ul>
+    <li>Many notes are still missing content</li>
+    <li>In-note links are not yet functional</li>
+    <li>Images also do not work currently</li>
+    <li>Dark mode. It's so bloody bright</li>
+    <li>Improve mobile experience</li>
+    <li>The code is horrific and I need to clean it up for my own sanity</li>
+    </ul>
+
+    <p>Otherwise, have fun browsing!</p>
+    `);
 
   function combineContent(docId){
-    console.log(content[docId].content)
     var doclink = String(content[docId].title)
-    doclink = "<h1 style='margin-bottom: 20px;'>" + doclink + "</h1>"
-    var doclink2 = String(content[docId].content)
+    doclink = "<h1>" + doclink + "</h1>"
+    if (String(content[docId].content) != ""){
+        var doclink2 = String(content[docId].content)
+    }
+    else{
+      var doclink2 = `<h4><strong style='color: red; '>Fuck.</strong></h4>
+      <p>No content found for this article, sorry about that.
+      I'll try to add something here soon.</p>`
+    }
     doclink = doclink + doclink2
     setCount(doclink)
 
@@ -199,21 +230,19 @@ const Post = props => {
   }
 
   return (
-
-   <body>
      <main className={styles.worlds}>
-
+     {/*
         <section className={styles.heroBanner}>
           <h1 className={styles.heroTitle}>Carthus</h1>
           <p> The black desert </p>
         </section>
-
+        */}
         <Container className={styles.worldsContainer}>
           <Row>
-            <Col md={3}>
+            <Col md={4}>
             <Card className={styles.worldsCard}>
               <Card.Body>
-                    <h2 className={styles.worldsSubtitle}>Document Navigation</h2>
+
                     {LoopLayerOne()}
               </Card.Body>
             </Card>
@@ -231,7 +260,6 @@ const Post = props => {
           </Row>
         </Container>
       </main>
-    </body>
   )
 }
 
