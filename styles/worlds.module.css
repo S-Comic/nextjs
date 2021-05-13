@@ -25,7 +25,7 @@
 .navigationItem{
   padding: 0 !important;
   border: none !important;
-  background-color: white !important;
+  background: none !important;
   display: flex !important;
   align-items: center !important;
   justify-content: !important;
@@ -33,10 +33,20 @@
 
 }
 
+.lightBackground{
+  color: var(--darkColor);
+  background-color: var(--darkBackground) !important;
+}
+
+.darkBackground{
+  color: var(--color);
+  background-color: var(--lightBackground) !important;
+}
+
+
 .navigationItemSingle{
   padding: 0 !important;
   border: none !important;
-  background-color: white !important;
   display: flex !important;
   align-items: center !important;
   justify-content: !important;
@@ -87,6 +97,7 @@
 
 .navigationItemContainer{
   border: none !important;
+  background: none !important;
 }
 
 .worldsSubtitle{
@@ -96,8 +107,10 @@
   margin-bottom: 0;
 }
 
+
 .card{
   color: white;
+
 }
 
 .navigationDropdownArrow:hover{
@@ -162,6 +175,7 @@
   margin-top: 3vh;
   border-top: 5px solid var(--themeColor);
   margin-bottom: 30px;
+  background-color: var(--darkBackgroundColor);
 }
 
 .worldsContainer .contentCard{

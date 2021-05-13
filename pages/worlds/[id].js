@@ -37,6 +37,7 @@ import posts from '../static/worldData.json'
 
 
 const Post = props => {
+  const [mode, setMode] = useState("lightBackground")
   const [count, setCount] = useState(`
     <h1>Work in progress!</h1>
 
@@ -97,8 +98,16 @@ const Post = props => {
         }
         }
 
+  }
 
-
+  function changeMode(tempMode){
+  if (mode == "lightBackground"){
+    tempMode = "darkBackground"
+  }
+  else{
+  tempMode = "lightBackground"
+  }
+  return tempMode
   }
 
   function LoopLayerOne(){
@@ -237,11 +246,12 @@ const Post = props => {
           <p> The black desert </p>
         </section>
         */}
+        <button onClick={() => setMode(changeMode(mode))}> click </button>
         <Container className={styles.worldsContainer}>
           <Row>
             <Col md={4}>
-            <Card className={styles.worldsCard}>
-              <Card.Body>
+            <Card className={styles.worldsCard + " " + styles[mode]}>
+              <Card.Body className={styles.cardBody}>
 
                     {LoopLayerOne()}
               </Card.Body>
@@ -250,7 +260,7 @@ const Post = props => {
 
             <Col>
             <Card className={styles.contentCard}>
-              <Card.Body>
+              <Card.Body className={styles.cardBody}>
               <div dangerouslySetInnerHTML={{__html: count}}>
               </div>
               </Card.Body>
