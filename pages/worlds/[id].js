@@ -37,7 +37,7 @@ import posts from '../static/worldData.json'
 
 
 const Post = props => {
-  const [mode, setMode] = useState("lightBackground")
+  const [mode, setMode] = useState("darkBackground")
   const [count, setCount] = useState(`
     <h1>Work in progress!</h1>
 
@@ -246,7 +246,7 @@ const Post = props => {
           <p> The black desert </p>
         </section>
         */}
-        <button onClick={() => setMode(changeMode(mode))}> click </button>
+        {/*<button onClick={() => setMode(changeMode(mode))}> click </button>*/}
         <Container className={styles.worldsContainer}>
           <Row>
             <Col md={4}>
